@@ -19,7 +19,7 @@ fi
 # 3. Linkar Configurações (Dotfiles)
 echo "🔗 Criando Symlinks..."
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig  # <-- ADICIONADO AQUI
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/ghostty
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
 mkdir -p ~/.config
