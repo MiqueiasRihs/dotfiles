@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Iniciando Setup do Miquéias..."
+echo "🚀 Iniciando Setup..."
 
 # 1. Instalar Pacotes Básicos
 echo "📦 Instalando DNF packages..."

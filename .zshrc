@@ -106,7 +106,7 @@ alias cd='z'
 # =============================================================================
 update_dotfiles() {
     echo "📦 Atualizando listas de pacotes..."
-    sudo dnf list installed | awk '{print $1}' > ~/dotfiles/dnf-packages.txt
+    sudo dnf list --installed | awk '{print $1}' > ~/dotfiles/dnf-packages.txt
     flatpak list --app --columns=application > ~/dotfiles/flatpak-list.txt
     code --list-extensions > ~/dotfiles/vscode-extensions.txt
     dconf dump / > ~/dotfiles/gnome-settings.ini
