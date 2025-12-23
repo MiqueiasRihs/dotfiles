@@ -17,12 +17,9 @@ background-blur-radius = 20
 # ==========================================
 cursor-style = block
 
-open_links = true
-copy_on_select = true
 cursor-style-blink = true
 mouse-hide-while-typing = true
 
-scrollback_lines = 100000
 keybind = ctrl+l=clear_screen
 
 # ==========================================
