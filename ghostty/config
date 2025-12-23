@@ -34,8 +34,8 @@ confirm-close-surface = false
 # TAMANHO PADRÃO (Colunas x Linhas)
 # 130 colunas é ótimo para dividir a tela (split) e codar
 # 40 linhas dá uma boa altura vertical
-window-width = 120
-window-height = 30
+window-width = 125
+window-height = 35
 
 # ==========================================
 # ATALHOS
@@ -47,10 +47,10 @@ keybind = ctrl+v=paste_from_clipboard
 # ATALHOS DE DIVISÃO
 # ==========================================
 # Dividir para a DIREITA (Right)
-keybind = ctrl+shift+r=new_split:right
+keybind = ctrl+shift+right=new_split:right
 
 # Dividir para BAIXO (Down)
-keybind = ctrl+shift+d=new_split:down
+keybind = ctrl+shift+down=new_split:down
 
 # Fechar o painel atual (Close)
 keybind = ctrl+shift+w=close_surface
@@ -58,11 +58,11 @@ keybind = ctrl+shift+w=close_surface
 # ==========================================
 # NAVEGAÇÃO ENTRE PAINÉIS
 # ==========================================
-# Usando Ctrl + Shift + Setas para mudar o foco
-keybind = ctrl+shift+left=goto_split:left
-keybind = ctrl+shift+right=goto_split:right
-keybind = ctrl+shift+up=goto_split:top
-keybind = ctrl+shift+down=goto_split:bottom
+# Usando alt + Shift + Setas para mudar o foco
+keybind = alt+shift+left=goto_split:left
+keybind = alt+shift+right=goto_split:right
+keybind = alt+shift+up=goto_split:top
+keybind = alt+shift+down=goto_split:bottom
 
 # ==========================================
 # REDIMENSIONAR PAINÉIS
