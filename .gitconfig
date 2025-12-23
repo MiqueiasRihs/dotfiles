@@ -1,0 +1,80 @@
+[user]
+	name = Miquéias
+	email = miqueias.rihs@gmail.com
+	# Assinar commits com a chave SSH que criada:
+	# signingkey = ~/.ssh/id_ed25519
+	# gpgsign = true
+
+[core]
+	editor = code --wait
+	pager = delta
+	excludesfile = /home/miqueias/.gitignore_global
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # Use n/N para pular entre diferenças
+	line-numbers = true
+	side-by-side = true
+	syntax-theme = Dracula
+
+[merge]
+	conflictstyle = diff3
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+[diff]
+	colorMoved = default
+
+[push]
+	default = simple
+	autoSetupRemote = true # Evita erro de "upstream not set"
+
+[fetch]
+	prune = true # Limpa branches mortos automaticamente
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[rerere]
+	enabled = true
+
+[pretty]
+	graph = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an%C(reset) %C(cyan)(%ar)%C(reset)
+	log = %C(green)%h %C(reset)%ad %C(auto)%d %C(reset)%s %C(blue)%an%C(reset)
+
+[alias]
+	s = status --short --branch
+	a = !git add -A && git status --short --branch
+	b = branch --verbose
+	d = diff
+	c = commit
+	ae = commit --amend
+	an = commit --amend --no-edit
+	co = checkout
+	rb = rebase
+	rbc = rebase --continue
+	ch = cherry-pick
+	fm = "!f() { git log --pretty=log --date=short --grep=$1; }; f"
+	m = merge --no-ff
+	wip = "!f() { git add -A; git commit -m \"WIP\"; }; f"
+	cnow = "!f() { git add -A; git commit -m \"`date +%Y-%m-%dT%H:%M`\"; git pull --rebase; git push; }; f"
+	l = log --graph --pretty=graph --all
+	lnp = !git --no-pager log --graph --pretty=graph --all
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t -> \\2/'
+	unstage = reset HEAD --      # Remove arquivo do stage
+	undo = reset --soft HEAD^    # Desfaz o último commit mantendo as alterações
+	lg = lazygit                 # Atalho rápido para o LazyGit
+	pf = push --force-with-lease # O jeito seguro de dar force push
+
+[safe]
+	directory = "*"
+
+[include]
+	path = ~/.gitconfig_local
