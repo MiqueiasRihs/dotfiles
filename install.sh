@@ -4,7 +4,7 @@ echo "🚀 Iniciando Setup..."
 
 # 1. Instalar Pacotes Básicos
 echo "📦 Instalando DNF packages..."
-sudo dnf install -y zsh git neovim ulauncher grim slurp wl-clipboard git-delta
+sudo dnf install -y zsh git neovim ulauncher grim slurp wl-clipboard git-delta nodejs npm
 
 # 2. Instalar Flatpaks
 echo "📦 Instalando Flatpaks..."

@@ -1431,6 +1431,11 @@ ngtcp2-crypto-gnutls.x86_64
 ngtcp2-crypto-ossl.x86_64
 nilfs-utils.x86_64
 nm-connection-editor.x86_64
+nodejs.x86_64
+nodejs-docs.noarch
+nodejs-full-i18n.x86_64
+nodejs-libs.x86_64
+nodejs-npm.x86_64
 npth.x86_64
 nspr.i686
 nspr.x86_64
