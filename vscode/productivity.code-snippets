@@ -1,0 +1,146 @@
+{
+	// ==========================================
+	// GERAL & PRODUTIVIDADE
+	// ==========================================
+	"Personal TODO": {
+		"scope": "javascript,typescript,python,html,css,dockerfile",
+		"prefix": "todo",
+		"body": [
+			"// TODO (Miquéias): $1",
+			"// Date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE"
+		],
+		"description": "TODO assinado para rastreabilidade"
+	},
+	"Console Log Label": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "clg",
+		"body": [
+			"console.log('🚀 ~ $1:', $1);"
+		],
+		"description": "Log bonito com label automático"
+	},
+	"Debug Breakpoint (Python)": {
+		"scope": "python",
+		"prefix": "pdb",
+		"body": [
+			"import ipdb; ipdb.set_trace()"
+		],
+		"description": "Breakpoint do IPDB"
+	},
+	// ==========================================
+	// PYTHON (Django & FastAPI)
+	// ==========================================
+	"FastAPI Pydantic Model": {
+		"scope": "python",
+		"prefix": "pmodel",
+		"body": [
+			"class ${1:ModelName}(BaseModel):",
+			"    ${2:field}: ${3:str}",
+			"",
+			"    class Config:",
+			"        orm_mode = True"
+		],
+		"description": "Modelo Pydantic padrão para FastAPI"
+	},
+	"Django ViewSet": {
+		"scope": "python",
+		"prefix": "dview",
+		"body": [
+			"class ${1:Name}ViewSet(viewsets.ModelViewSet):",
+			"    queryset = ${2:Model}.objects.all()",
+			"    serializer_class = ${2:Model}Serializer",
+			"    permission_classes = [permissions.IsAuthenticated]"
+		],
+		"description": "Boilerplate de ViewSet do DRF"
+	},
+	"Python Main Guard": {
+		"scope": "python",
+		"prefix": "ifname",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"    ${1:main()}"
+		],
+		"description": "Bloco de execução padrão"
+	},
+	// ==========================================
+	// JAVASCRIPT / TYPESCRIPT / REACT
+	// ==========================================
+	"Async Arrow Function": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "afn",
+		"body": [
+			"const ${1:name} = async (${2:params}) => {",
+			"  try {",
+			"    $3",
+			"  } catch (error) {",
+			"    console.error('Error in ${1:name}:', error);",
+			"  }",
+			"};"
+		],
+		"description": "Função assíncrona com Try/Catch pronto"
+	},
+	"React Functional Component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "rfc",
+		"body": [
+			"export const ${1:ComponentName} = () => {",
+			"  return (",
+			"    <div className=\"container\">",
+			"      $2",
+			"    </div>",
+			"  );",
+			"};"
+		],
+		"description": "Componente React Funcional Limpo"
+	},
+	"React UseEffect": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "uef",
+		"body": [
+			"useEffect(() => {",
+			"  $1",
+			"}, [${2:dependencies}]);"
+		],
+		"description": "useEffect hook snippet"
+	},
+	// ==========================================
+	// DOCKER
+	// ==========================================
+	"Dockerfile Python Slim": {
+		"scope": "dockerfile",
+		"prefix": "dockpy",
+		"body": [
+			"FROM python:3.11-slim",
+			"",
+			"WORKDIR /app",
+			"",
+			"ENV PYTHONDONTWRITEBYTECODE 1",
+			"ENV PYTHONUNBUFFERED 1",
+			"",
+			"COPY requirements.txt .",
+			"RUN pip install --no-cache-dir -r requirements.txt",
+			"",
+			"COPY . .",
+			"",
+			"CMD [\"uvicorn\", \"main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"]"
+		],
+		"description": "Template Docker otimizado para Python/FastAPI"
+	},
+	"Docker Compose Service": {
+		"scope": "yaml,dockercompose",
+		"prefix": "dcservice",
+		"body": [
+			"${1:service_name}:",
+			"  build: .",
+			"  ports:",
+			"    - \"${2:8000}:${3:8000}\"",
+			"  volumes:",
+			"    - .:/app",
+			"  env_file:",
+			"    - .env",
+			"  depends_on:",
+			"    - ${4:db}"
+		],
+		"description": "Bloco de serviço padrão para docker-compose"
+	}
+}

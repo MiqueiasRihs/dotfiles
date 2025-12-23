@@ -1,0 +1,40 @@
+{
+    // ==========================================
+    // VISUAL & TEMA (Sincronizado com Ghostty)
+    // ==========================================
+    "workbench.colorTheme": "Ayu Dark Bordered", // Ou "Dracula"
+    "workbench.iconTheme": "material-icon-theme",
+    "window.titleBarStyle": "custom", // Remove a barra de título feia do sistema
+    "window.dialogStyle": "custom",
+    // ==========================================
+    // FONTE E TIPOGRAFIA
+    // ==========================================
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', monospace",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.5, // Mais respiro entre linhas (leitura fácil)
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+    // ==========================================
+    // LIMPEZA DE INTERFACE (Zen Mode)
+    // ==========================================
+    "editor.minimap.enabled": false, // Ganha espaço horizontal
+    "editor.renderWhitespace": "selection", // Só mostra espaços se selecionar
+    "editor.bracketPairColorization.enabled": true, // Colorir pares de chaves
+    "editor.guides.bracketPairs": "active",
+    "workbench.activityBar.location": "top", // Move a barra lateral para ícones discretos
+    "workbench.sideBar.location": "left",
+    "breadcrumbs.enabled": true, // Barra de navegação no topo do arquivo
+    // ==========================================
+    // COMPORTAMENTO & FORMAT
+    // ==========================================
+    "editor.formatOnSave": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.cursorBlinking": true,
+    "files.trimTrailingWhitespace": true, // Boa prática de Git
+    // ==========================================
+    // TERMINAL INTEGRADO (Zsh)
+    // ==========================================
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.cursorStyle": "line",
+}

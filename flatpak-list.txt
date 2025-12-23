@@ -1,0 +1,6 @@
+be.alexandervanhee.gradia
+com.getpostman.Postman
+com.mattjakeman.ExtensionManager
+com.wps.Office
+io.beekeeperstudio.Studio
+org.telegram.desktop
