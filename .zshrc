@@ -81,6 +81,9 @@ alias performance='powerprofilesctl set performance'
 alias balanced='powerprofilesctl set balanced'
 alias powersaver='powerprofilesctl set power-saver'
 
+alias start-android='docker start redroid && adb connect localhost:5555 && scrcpy -s localhost:5555 --no-audio'
+alias stop-android='docker stop redroid && adb disconnect localhost:5555'
+
 # =============================================================================
 #  PLUGINS
 # =============================================================================

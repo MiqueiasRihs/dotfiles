@@ -29,6 +29,7 @@ PackageKit-command-not-found.x86_64
 PackageKit-glib.x86_64
 PackageKit-gstreamer-plugin.x86_64
 PackageKit-gtk3-module.x86_64
+SDL3.i686
 SDL3.x86_64
 SDL_image.x86_64
 aajohan-comfortaa-fonts.noarch
@@ -80,6 +81,7 @@ anaconda-install-env-deps.x86_64
 anaconda-live.noarch
 anaconda-tui.x86_64
 anaconda-webui.noarch
+android-tools.x86_64
 annobin-docs.noarch
 annobin-plugin-gcc.x86_64
 ansible-srpm-macros.noarch
@@ -231,6 +233,7 @@ dbus-daemon.x86_64
 dbus-libs.i686
 dbus-libs.x86_64
 dbus-tools.x86_64
+dbus-x11.x86_64
 dconf.i686
 dconf.x86_64
 debugedit.x86_64
@@ -546,6 +549,7 @@ gnome-session-wayland-session.x86_64
 gnome-settings-daemon.x86_64
 gnome-shell.x86_64
 gnome-shell-common.noarch
+gnome-shell-extension-appindicator.noarch
 gnome-shell-extension-apps-menu.noarch
 gnome-shell-extension-background-logo.noarch
 gnome-shell-extension-common.noarch
@@ -672,6 +676,7 @@ gstreamer1-plugins-good-qt.x86_64
 gstreamer1-plugins-good-qt6.x86_64
 gstreamer1-plugins-ugly-free.x86_64
 gtk-update-icon-cache.x86_64
+gtk2.i686
 gtk2.x86_64
 gtk3.i686
 gtk3.x86_64
@@ -841,6 +846,7 @@ lcms2.i686
 lcms2.x86_64
 leptonica.x86_64
 less.x86_64
+libICE.i686
 libICE.x86_64
 libSM.x86_64
 libX11.i686
@@ -848,6 +854,7 @@ libX11.x86_64
 libX11-common.noarch
 libX11-xcb.i686
 libX11-xcb.x86_64
+libXScrnSaver.i686
 libXScrnSaver.x86_64
 libXau.i686
 libXau.x86_64
@@ -897,6 +904,7 @@ libassuan.x86_64
 libasyncns.i686
 libasyncns.x86_64
 libatasmart.x86_64
+libatomic.i686
 libatomic.x86_64
 libattr.x86_64
 libavc1394.x86_64
@@ -942,6 +950,7 @@ libcamera.x86_64
 libcamera-ipa.x86_64
 libcanberra.i686
 libcanberra.x86_64
+libcanberra-gtk2.i686
 libcanberra-gtk2.x86_64
 libcanberra-gtk3.i686
 libcanberra-gtk3.x86_64
@@ -975,6 +984,7 @@ libdav1d.x86_64
 libdbusmenu.x86_64
 libdbusmenu-gtk3.x86_64
 libdc1394.x86_64
+libdecor.i686
 libdecor.x86_64
 libdeflate.x86_64
 libdhash.x86_64
@@ -1128,6 +1138,7 @@ libnl3-cli.x86_64
 libnma.x86_64
 libnma-gtk4.x86_64
 libnotify.x86_64
+libnsl.i686
 libnsl.x86_64
 libnsl2.x86_64
 libnvme.x86_64
@@ -1453,6 +1464,7 @@ ntfs-3g.x86_64
 ntfs-3g-libs.x86_64
 ntfs-3g-system-compression.x86_64
 ntfsprogs.x86_64
+ntsync-autoload.noarch
 numactl-libs.x86_64
 nvidia-gpu-firmware.noarch
 nvidia-modprobe.x86_64
@@ -1832,8 +1844,10 @@ sane-backends-drivers-scanners.x86_64
 sane-backends-libs.x86_64
 satyr.x86_64
 schroedinger.x86_64
+scrcpy.x86_64
 sdbus-cpp.x86_64
 sdl12-compat.x86_64
+sdl2-compat.i686
 sdl2-compat.x86_64
 sed.x86_64
 selinux-policy.noarch
@@ -1885,6 +1899,8 @@ sssd-krb5-common.x86_64
 sssd-nfs-idmap.x86_64
 sssd-proxy.x86_64
 startup-notification.x86_64
+steam.i686
+steam-devices.noarch
 stix-fonts.noarch
 stoken-libs.x86_64
 sudo.x86_64
