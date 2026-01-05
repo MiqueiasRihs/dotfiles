@@ -49,9 +49,12 @@ bindkey '^[[5C' forward-word
 #  ALIASES (Atalhos de Produtividade)
 # =============================================================================
 # Sistema
-alias update='sudo dnf update -y'
-alias install='sudo dnf install'
 alias cls='clear'
+alias install='sudo dnf install'
+alias update='sudo dnf update -y'
+alias zshrc='code ~/dotfiles/.zshrc'
+
+alias dotup="update_dotfiles"
 
 # Listagem melhorada
 alias ll='ls -lAh --color=auto'
@@ -80,6 +83,9 @@ alias getmode='powerprofilesctl get'
 alias performance='powerprofilesctl set performance'
 alias balanced='powerprofilesctl set balanced'
 alias powersaver='powerprofilesctl set power-saver'
+
+# Go
+alias gorm='go mod tidy'
 
 alias start-android='docker start redroid && adb connect localhost:5555 && scrcpy -s localhost:5555 --no-audio'
 alias stop-android='docker stop redroid && adb disconnect localhost:5555'
@@ -123,7 +129,9 @@ update_dotfiles() {
     echo "✅ Dotfiles sincronizados com o GitHub!"
 }
 
-alias dotup="update_dotfiles"
+# --- Go (Golang) Setup ---
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # =============================================================================
 #  PROMPT (Starship) - Deve ser sempre o último

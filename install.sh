@@ -7,7 +7,7 @@ echo "📦 Configurando repositórios e instalando pacotes..."
 # Habilita COPR para o scrcpy conforme sua necessidade
 sudo dnf copr enable -y zeno/scrcpy
 sudo dnf install -y zsh git neovim ulauncher grim slurp wl-clipboard \
-                    git-delta nodejs npm cmake ninja-build gtk3-devel \
+                    git-delta nodejs npm golang cmake ninja-build gtk3-devel \
                     clang pkg-config android-tools scrcpy \
                     kernel-devel-$(uname -r) kernel-headers-$(uname -r)
 
