@@ -157,6 +157,7 @@ cairo-gobject.i686
 cairo-gobject.x86_64
 cairomm.x86_64
 cairomm1.16.x86_64
+capstone.x86_64
 catatonit.x86_64
 cdparanoia-libs.x86_64
 checkpolicy.x86_64
@@ -812,15 +813,21 @@ kdump-anaconda-addon.noarch
 kdump-utils.x86_64
 kernel.x86_64
 kernel.x86_64
+kernel.x86_64
 kernel-core.x86_64
 kernel-core.x86_64
+kernel-core.x86_64
+kernel-devel.x86_64
 kernel-devel.x86_64
 kernel-devel-matched.x86_64
 kernel-headers.x86_64
 kernel-modules.x86_64
 kernel-modules.x86_64
+kernel-modules.x86_64
 kernel-modules-core.x86_64
 kernel-modules-core.x86_64
+kernel-modules-core.x86_64
+kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-modules-extra.x86_64
 kernel-srpm-macros.noarch
@@ -837,6 +844,7 @@ kf6-kimageformats.x86_64
 kmod.x86_64
 kmod-libs.x86_64
 kmod-nvidia-6.17.12-300.fc43.x86_64.x86_64
+kmod-nvidia-6.18.3-200.fc43.x86_64.x86_64
 kmodtool.noarch
 kpartx.x86_64
 krb5-libs.i686
@@ -1158,6 +1166,7 @@ libpath_utils.x86_64
 libpcap.x86_64
 libpciaccess.i686
 libpciaccess.x86_64
+libpfm.x86_64
 libphonenumber.x86_64
 libpinyin.x86_64
 libpinyin-data.x86_64

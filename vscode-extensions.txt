@@ -1,3 +1,4 @@
+charliermarsh.ruff
 golang.go
 ms-azuretools.vscode-containers
 ms-python.debugpy
